@@ -1,0 +1,7 @@
+name: Regen Digtial Beef Supply Chain
+type: module
+description: Demo beef supply chain module.
+package: farmOS Custom
+core_version_requirement: ^9
+dependencies:
+  - farm_land
