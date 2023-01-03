@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_regen_digital_bsc
+id: pic
+label: Property Identification Code
+bundles:
+  - land
