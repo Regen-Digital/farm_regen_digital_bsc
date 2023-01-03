@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - asset
+    - farm_flag
+    - farm_id_tag
+    - farm_profile
+    - farm_ui_location
+    - system
+id: regen_digital_beef_aggregator
+label: 'Regen Digital Beef Aggregator'
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access locations overview'
+  - 'access profile overview'
+  - 'access user profiles'
+  - 'view any land asset'
+  - 'view asset_type'
+  - 'view flag'
+  - 'view profile'
+  - 'view tag_type'

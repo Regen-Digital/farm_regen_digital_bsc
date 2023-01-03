@@ -11,3 +11,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add MVP profile fields [#1](https://github.com/paul121/farm_regen_digital_bsc/issues/1)
 - Add PIC ID tag for land assets
+- Add role for aggregating profile and PIC data [#3](https://github.com/paul121/farm_regen_digital_bsc/issues/3)
