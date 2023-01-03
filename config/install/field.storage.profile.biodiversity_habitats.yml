@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_profile
+    - options
+  enforced:
+    module:
+      - farm_regen_digital_bsc
+id: profile.biodiversity_habitats
+field_name: biodiversity_habitats
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: endangered_community
+      label: 'Endangered community'
+    -
+      value: endangered_habitat
+      label: 'Endangered habitat'
+    -
+      value: woodland
+      label: Woodland
+    -
+      value: wetland
+      label: Wetland
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

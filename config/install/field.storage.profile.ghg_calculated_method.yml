@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_profile
+    - options
+  enforced:
+    module:
+      - farm_regen_digital_bsc
+id: profile.ghg_calculated_method
+field_name: ghg_calculated_method
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: self_assessment
+      label: 'Self assessment'
+    -
+      value: online_tool
+      label: 'Online tool'
+    -
+      value: climate_active
+      label: 'Climate active assessment'
+    -
+      value: unknown
+      label: Unknown
+    -
+      value: other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

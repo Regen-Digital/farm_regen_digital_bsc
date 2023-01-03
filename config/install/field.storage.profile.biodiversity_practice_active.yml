@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_profile
+    - options
+  enforced:
+    module:
+      - farm_regen_digital_bsc
+id: profile.biodiversity_practice_active
+field_name: biodiversity_practice_active
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: fencing
+      label: Fencing
+    -
+      value: weed_pest_control
+      label: 'Weed or pest control'
+    -
+      value: habitat_restoration
+      label: 'Habitat restoration'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.regen_beef_sustainability
+    - field.storage.profile.pic
+  enforced:
+    module:
+      - farm_regen_digital_bsc
+id: profile.regen_beef_sustainability.pic
+field_name: pic
+entity_type: profile
+bundle: regen_beef_sustainability
+label: 'Property Identification Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

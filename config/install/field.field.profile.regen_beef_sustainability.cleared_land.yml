@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.regen_beef_sustainability
+    - field.storage.profile.cleared_land
+  enforced:
+    module:
+      - farm_regen_digital_bsc
+id: profile.regen_beef_sustainability.cleared_land
+field_name: cleared_land
+entity_type: profile
+bundle: regen_beef_sustainability
+label: 'Cleared land'
+description: 'Enter how many months ago land was cleared'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: months
+field_type: integer

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_regen_digital_bsc
+id: regen_beef_sustainability
+label: 'Beef sustainability'

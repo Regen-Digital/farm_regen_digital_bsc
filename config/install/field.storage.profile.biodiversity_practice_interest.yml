@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_profile
+    - options
+  enforced:
+    module:
+      - farm_regen_digital_bsc
+id: profile.biodiversity_practice_interest
+field_name: biodiversity_practice_interest
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: habitat_connectivity
+      label: 'Habitat connectivity'
+    -
+      value: planting
+      label: Planting
+    -
+      value: other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

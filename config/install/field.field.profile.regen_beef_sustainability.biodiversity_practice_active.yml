@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.regen_beef_sustainability
+    - field.storage.profile.biodiversity_practice_active
+  module:
+    - options
+  enforced:
+    module:
+      - farm_regen_digital_bsc
+id: profile.regen_beef_sustainability.biodiversity_practice_active
+field_name: biodiversity_practice_active
+entity_type: profile
+bundle: regen_beef_sustainability
+label: 'Implemented biodiversity practices'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

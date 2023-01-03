@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.regen_beef_sustainability
+    - field.storage.profile.ghg_calculated
+  enforced:
+    module:
+      - farm_regen_digital_bsc
+id: profile.regen_beef_sustainability.ghg_calculated
+field_name: ghg_calculated
+entity_type: profile
+bundle: regen_beef_sustainability
+label: 'Total GHG footprint'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: tCO2
+field_type: float

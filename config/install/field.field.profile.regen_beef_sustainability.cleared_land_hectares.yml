@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.regen_beef_sustainability
+    - field.storage.profile.cleared_land_hectares
+  enforced:
+    module:
+      - farm_regen_digital_bsc
+id: profile.regen_beef_sustainability.cleared_land_hectares
+field_name: cleared_land_hectares
+entity_type: profile
+bundle: regen_beef_sustainability
+label: 'Cleared land hectares'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ha
+field_type: float

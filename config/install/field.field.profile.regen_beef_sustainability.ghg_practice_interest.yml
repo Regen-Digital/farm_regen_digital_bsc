@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.regen_beef_sustainability
+    - field.storage.profile.ghg_practice_interest
+  module:
+    - options
+  enforced:
+    module:
+      - farm_regen_digital_bsc
+id: profile.regen_beef_sustainability.ghg_practice_interest
+field_name: ghg_practice_interest
+entity_type: profile
+bundle: regen_beef_sustainability
+label: 'Interested GHG practices'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
