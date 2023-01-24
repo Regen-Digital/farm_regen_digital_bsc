@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## 1.0.0 2023-01-23
+
 ### Added
 
 - Add MVP profile fields [#1](https://github.com/paul121/farm_regen_digital_bsc/issues/1)
