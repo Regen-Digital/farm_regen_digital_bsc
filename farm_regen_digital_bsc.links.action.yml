@@ -1,0 +1,7 @@
+farm_regen_digital_bsc.add_profile:
+  route_name: entity.profile.add_form
+  title: 'Add Beef Profile'
+  appears_on:
+    - farm_regen_digital.profiles
+  route_parameters:
+    profile_type: 'regen_beef_sustainability'
