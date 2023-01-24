@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall function for the farm_regen_digital_bsc module.
+ */
+
+use Drupal\consumers\Entity\Consumer;
+
+/**
+ * Implements hook_install().
+ */
+function farm_regen_digital_bsc_install() {
+
+  // Create a consumer for the Aggregator Demo.
+  $consumer = Consumer::create([
+    'label' => 'BSC Demo Aggregator',
+    'client_id' => 'farmos_aggregator',
+    'redirect' => 'https://main-bvxea6i-armtltkql7asu.us-3.platformsh.site/authorize-farm',
+    'allowed_origins' => '',
+    'owner_id' => '',
+    'secret' => NULL,
+    'roles' => ['regen_digital_beef_aggregator'],
+    'confidential' => FALSE,
+    'third_party' => TRUE,
+    'grant_user_access' => FALSE,
+    'limit_user_access' => FALSE,
+    'limit_requested_access' => FALSE,
+  ]);
+  $consumer->save();
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function farm_regen_digital_bsc_uninstall() {
+
+  $consumers = \Drupal::entityTypeManager()->getStorage('consumer')
+    ->loadByProperties(['client_id' => 'farmos_aggregator']);
+
+  // If found, delete the consumer.
+  if (!empty($consumers)) {
+    $client_consumer = reset($consumers);
+    $client_consumer->delete();
+  }
+}
