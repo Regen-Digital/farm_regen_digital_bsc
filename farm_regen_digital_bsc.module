@@ -1,0 +1,109 @@
+<?php
+
+/**
+ * @file
+ * Module file for farm_regen_digital_bsc module.
+ */
+
+use Drupal\Core\Entity\ContentEntityInterface;
+use Drupal\field\Entity\FieldStorageConfig;
+
+/**
+ * GHG Practice list string options.
+ *
+ * @param \Drupal\field\Entity\FieldStorageConfig $definition
+ *   The field storage definition.
+ * @param \Drupal\Core\Entity\ContentEntityInterface|null $entity
+ *   The content entity.
+ * @param bool $cacheable
+ *   Cacheable.
+ *
+ * @return \string[][]
+ *   Array of options.
+ */
+function farm_regen_digital_bsc_ghg_practice_options(FieldStorageConfig $definition, ContentEntityInterface $entity = NULL, $cacheable) {
+  return [
+    'Management of Carbon Flows' => [
+      'soil_conservation' => 'Soil conservation',
+      'carbon_conservation' => 'Carbon conservation',
+      'reduce_tillage' => 'Reduce tillage',
+      'crop_residue' => 'Return crop residues to the soil',
+      'agroforestry' => 'Establish agroforestry systems',
+      'cover_crop' => 'Cover cropping',
+    ],
+    'Management of Nitrogen Flows' => [
+      'nutrient_management' => 'Enhance nitrogen management through nutrient management planning',
+    ],
+    'Livestock Management' => [
+      'feed_additives' => 'Use of livestock feed additives',
+      'rotational_grazing' => 'Implement rotational/cell grazing',
+      'enteric_fermentation' => 'Using high quality feed that will reduce methane released from enteric fermentation',
+      'manure_management'    => 'Manure management',
+    ],
+    'Energy Conservation' => [
+      'fuel_switching' => 'Fuel switching',
+      'farm_energy_audit'    => 'Conduct an on-farm, all-fuel energy assessment to identify energy saving opportunities',
+      'hvac_maintenance' => 'Ensure that all heating and cooling systems are in good working order',
+      'automated_hvac' => 'Use timers, sensors or variable speed drives on ventilation, heating, cooling and lighting systems',
+      'electric_equipment'    => 'Replace fossil-fuel powered equipment with electrical pumps and motors',
+      'energy_production' => 'On farm energy production',
+      'anaerobic_digestion' => 'Anaerobic digestion',
+      'geothermal' => 'Geothermal',
+      'solar_thermal' => 'Solar thermal',
+      'wind' => 'Wind',
+      'photovoltaic' => 'Solar panels (photovoltaic)',
+      'battery'    => 'Rechargeable batteries',
+    ],
+  ];
+}
+
+/**
+ * Biodiversity habitat list string options.
+ *
+ * @param \Drupal\field\Entity\FieldStorageConfig $definition
+ *   The field storage definition.
+ * @param \Drupal\Core\Entity\ContentEntityInterface|null $entity
+ *   The content entity.
+ * @param bool $cacheable
+ *   Cacheable.
+ *
+ * @return \string[]
+ *   Array of options.
+ */
+function farm_regen_digital_bsc_biodiversity_habitat_options(FieldStorageConfig $definition, ContentEntityInterface $entity = NULL, $cacheable) {
+  return [
+    'endangered_community' => 'Threatened species',
+    'endangered_habitat' => 'Threatened species habitat',
+    'woodland' => 'Woodland',
+    'forest' => 'Forest',
+    'wetland' => 'Wetland',
+    'creek' => 'Creek',
+    'river' => 'River',
+    'other' => 'Other',
+  ];
+}
+
+/**
+ * Biodiversity practice list string options.
+ *
+ * @param \Drupal\field\Entity\FieldStorageConfig $definition
+ *   The field storage definition.
+ * @param \Drupal\Core\Entity\ContentEntityInterface|null $entity
+ *   The content entity.
+ * @param bool $cacheable
+ *   Cacheable.
+ *
+ * @return \string[]
+ *   Array of options.
+ */
+function farm_regen_digital_bsc_biodiversity_practice_options(FieldStorageConfig $definition, ContentEntityInterface $entity = NULL, $cacheable) {
+  return [
+    'weed_pest_control' => 'Controlling weeds or pests',
+    'fencing' => 'Fencing',
+    'water_point' => 'Water points',
+    'habitat_restoration' => 'Habitat restoration',
+    'habitat_connectivity' => 'Improving connectivity between habitats',
+    'planting' => 'Planting',
+    'other' => 'Other',
+  ];
+}

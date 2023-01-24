@@ -12,20 +12,8 @@ field_name: biodiversity_habitats
 entity_type: profile
 type: list_string
 settings:
-  allowed_values:
-    -
-      value: endangered_community
-      label: 'Endangered community'
-    -
-      value: endangered_habitat
-      label: 'Endangered habitat'
-    -
-      value: woodland
-      label: Woodland
-    -
-      value: wetland
-      label: Wetland
-  allowed_values_function: ''
+  allowed_values: [ ]
+  allowed_values_function: 'farm_regen_digital_bsc_biodiversity_habitat_options'
 module: options
 locked: false
 cardinality: -1

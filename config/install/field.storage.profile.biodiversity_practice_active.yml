@@ -12,17 +12,8 @@ field_name: biodiversity_practice_active
 entity_type: profile
 type: list_string
 settings:
-  allowed_values:
-    -
-      value: fencing
-      label: Fencing
-    -
-      value: weed_pest_control
-      label: 'Weed or pest control'
-    -
-      value: habitat_restoration
-      label: 'Habitat restoration'
-  allowed_values_function: ''
+  allowed_values: [ ]
+  allowed_values_function: 'farm_regen_digital_bsc_biodiversity_practice_options'
 module: options
 locked: false
 cardinality: -1

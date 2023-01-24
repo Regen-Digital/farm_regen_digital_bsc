@@ -12,14 +12,8 @@ field_name: ghg_practice_interest
 entity_type: profile
 type: list_string
 settings:
-  allowed_values:
-    -
-      value: agroforestry
-      label: Agroforestry
-    -
-      value: cover_crop
-      label: 'Cover crop'
-  allowed_values_function: ''
+  allowed_values: [ ]
+  allowed_values_function: 'farm_regen_digital_bsc_ghg_practice_options'
 module: options
 locked: false
 cardinality: -1

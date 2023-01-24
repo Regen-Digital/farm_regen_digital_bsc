@@ -12,17 +12,8 @@ field_name: biodiversity_practice_interest
 entity_type: profile
 type: list_string
 settings:
-  allowed_values:
-    -
-      value: habitat_connectivity
-      label: 'Habitat connectivity'
-    -
-      value: planting
-      label: Planting
-    -
-      value: other
-      label: Other
-  allowed_values_function: ''
+  allowed_values: [ ]
+  allowed_values_function: 'farm_regen_digital_bsc_biodiversity_practice_options'
 module: options
 locked: false
 cardinality: -1
