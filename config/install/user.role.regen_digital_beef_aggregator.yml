@@ -8,6 +8,8 @@ dependencies:
     - farm_profile
     - farm_ui_location
     - system
+  enforced:
+    - farm_regen_digital_bsc
 id: regen_digital_beef_aggregator
 label: 'Regen Digital Beef Aggregator'
 is_admin: null
@@ -16,6 +18,10 @@ permissions:
   - 'access locations overview'
   - 'access profile overview'
   - 'access user profiles'
+  - 'create profile'
+  - 'delete profile'
+  - 'edit profile'
+  - 'grant simple_oauth codes'
   - 'view any land asset'
   - 'view asset_type'
   - 'view flag'
