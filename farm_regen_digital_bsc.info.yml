@@ -2,7 +2,7 @@ name: Regen Digital Beef Supply Chain
 type: module
 description: Demo beef supply chain module.
 package: farmOS Custom
-core_version_requirement: ^9
+core_version_requirement: ^9 || ^10
 dependencies:
   - farm_land
   - farm_profile:farm_profile
