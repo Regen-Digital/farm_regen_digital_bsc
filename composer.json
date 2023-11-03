@@ -10,6 +10,6 @@
   ],
   "require": {
         "drupal/farm_profile": "1.x-dev",
-        "farmos/farmos": "^2.0"
+        "farmos/farmos": "^2.0 || ^3.0"
   }
 }
